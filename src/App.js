@@ -7,6 +7,7 @@ import Collapse from '@material-ui/core/Collapse';
 
 function App() {
 	const classes = useStyle();
+	const button = [ '+', '-', 'x', '/' ];
 
 	const [ value, setValue ] = useState({
 		item1: { value: 0, check: true },
@@ -15,8 +16,6 @@ function App() {
 	});
 
 	const [ isAlertOpen, setIsAlertOpen ] = useState(false);
-
-	const button = [ '+', '-', 'x', '/' ];
 
 	const [ finalValue, setFinalValue ] = useState(0);
 
